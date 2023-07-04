@@ -14,19 +14,19 @@ import java.util.UUID;
 @Entity
 @Data
 @NoArgsConstructor
-public class Client {
+public class Customer {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID id;
 	private String document;
 	private String name;
 	private LocalDate birthDate;
 
-	public Client(UUID id, String document, String name, LocalDate birthDate){
+	public Customer(UUID id, String document, String name, LocalDate birthDate){
 		this.id = id;
-		this.document = document;
 		this.name = name;
+		this.document = document;
 		this.birthDate = birthDate;
 	}
 
