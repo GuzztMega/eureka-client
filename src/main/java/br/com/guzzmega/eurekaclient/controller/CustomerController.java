@@ -27,7 +27,7 @@ public class CustomerController {
 	@GetMapping("/health")
 	public String status(){
 		log.info("Checking customers microservice status...");
-		return "Application Status: UP!";
+		return "Customers Application Status: UP!";
 	}
 
 	@PostMapping
